@@ -1,0 +1,16 @@
+programa {
+  inclua biblioteca Matematica --> mat
+
+  funcao inicio() {
+    real total, guardado, cadaAmigo
+
+    escreva("Valor total arrecadado (R$): ")
+    leia(total)
+
+    guardado = total * 0.10
+    cadaAmigo = (total - guardado) / 3.0
+
+    escreva("Valor guardado para os limões: R$ ", mat.arredondar(guardado, 2), "\n")
+    escreva("Cada amigo recebe: R$ ", mat.arredondar(cadaAmigo, 2), "\n")
+  }
+}
