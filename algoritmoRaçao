@@ -1,0 +1,17 @@
+programa {
+  inclua biblioteca Matematica --> mat
+
+  funcao inicio() {
+    real pesoKg, consumoDiario, pesoG, sobra
+
+    escreva("Peso do saco de ração (kg): ")
+    leia(pesoKg)
+    escreva("Consumo diário do cão (g): ")
+    leia(consumoDiario)
+
+    pesoG = pesoKg * 1000.0
+    sobra = pesoG - (consumoDiario * 5.0)
+
+    escreva("Sobrarão ", mat.arredondar(sobra, 0), " g de ração após 5 dias.\n")
+  }
+}
