@@ -1,0 +1,18 @@
+programa {
+   funcao inicio()
+ {
+    escreva(“Quantidade de poção de cura: “)
+    inteiro(pocaoCura)
+    leia(pocaoCura)
+    inteiro totalCura = pocaoCura * 15
+
+    escreva(“Quantidade de poção de energia: “)
+    inteiro(pocaoEnergia)
+    leia(pocaoEnergia)
+    inteiro totalEnergia = pocaoEnergia * 25
+
+    totalMana = totalCura + totalEnergia
+    escreva(“Total de mana gerado: “, totalMana)
+}
+}
+          
