@@ -1,0 +1,19 @@
+programa {
+  inclua biblioteca Matematica --> mat
+
+  funcao inicio() {
+    inteiro paineis
+    real tarifa, geracao30Dias, economia
+
+    escreva("Quantidade de painéis instalados: ")
+    leia(paineis)
+    escreva("Valor do kWh (R$): ")
+    leia(tarifa)
+
+    geracao30Dias = paineis * 1.2 * 30.0
+    economia = geracao30Dias * tarifa
+
+    escreva("Geração em 30 dias: ", mat.arredondar(geracao30Dias, 2), " kWh\n")
+    escreva("Economia no mês: R$ ", mat.arredondar(economia, 2), "\n")
+  }
+}
